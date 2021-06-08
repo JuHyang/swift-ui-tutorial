@@ -16,5 +16,6 @@ struct ContentView: View { // View 프로토콜을 따르며 보기의 내용과
 struct ContentView_Previews: PreviewProvider { // 해당 구조에 대한 미리보기 선언
     static var previews: some View {
         ContentView()
+            .environmentObject(ModelData())
     }
 }
